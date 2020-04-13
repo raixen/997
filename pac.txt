@@ -1,18 +1,20 @@
 /*
  * PAC JavaScript
  * genpac 2.1.1dev https://github.com/JinnLynn/genpac
- * GFWList Last-Modified: 2019-10-28 11:52:22
- * Update URL: https://raw.githubusercontent.com/raixen/997/master/pac.txt
+ * GFWList Last-Modified: 2020-04-12 21:15:29
+ * Update URL: https://github.com/raixen/997/raw/master/pac.txt
  */
 
 var proxy = '__PROXY__';
 var rules = [
-/* User add rule */
+
+    /* User add rule */
     [
         [],   /* Direct domain */
         []    /* Proxy domain */
     ],
-/* Default rule */
+
+    /* Default rule */
     [
         [
             "aftygh.gov.tw",
@@ -191,6 +193,7 @@ var rules = [
             "666kb.com",
             "6park.com",
             "6parker.com",
+            "6parknews.com",
             "7capture.com",
             "7cow.com",
             "8-d.com",
@@ -459,6 +462,7 @@ var rules = [
             "avdb.in",
             "avdb.tv",
             "avfantasy.com",
+            "avg.com",
             "avgle.com",
             "avidemux.org",
             "avmo.pw",
@@ -1234,6 +1238,7 @@ var rules = [
             "dnssec.net",
             "dnvod.tv",
             "doctorvoice.org",
+            "documentingreality.com",
             "dogfartnetwork.com",
             "dojin.com",
             "dok-forum.net",
@@ -1575,6 +1580,7 @@ var rules = [
             "fdc89.jp",
             "feedburner.com",
             "feedly.com",
+            "feedx.net",
             "feelssh.com",
             "feer.com",
             "feifeiss.com",
@@ -1950,7 +1956,6 @@ var rules = [
             "google.ci",
             "google.cl",
             "google.cm",
-            "google.cn",
             "google.co.ao",
             "google.co.bw",
             "google.co.ck",
@@ -2126,7 +2131,6 @@ var rules = [
             "google.vn",
             "google.vu",
             "google.ws",
-            "googleapis.cn",
             "googleapis.com",
             "googleapps.com",
             "googlearth.com",
@@ -2203,6 +2207,7 @@ var rules = [
             "guancha.org",
             "guaneryu.com",
             "guangming.com.my",
+            "guangnianvpn.com",
             "guardster.com",
             "guishan.org",
             "gumroad.com",
@@ -2239,6 +2244,7 @@ var rules = [
             "hahlo.com",
             "hakkatv.org.tw",
             "handcraftedsoftware.org",
+            "hanime.tv",
             "hanminzu.org",
             "hanunyi.com",
             "hao.news",
@@ -2904,6 +2910,7 @@ var rules = [
             "lighten.org.tw",
             "lighti.me",
             "lightnovel.cn",
+            "lightyearvpn.com",
             "lihkg.com",
             "like.com",
             "limiao.net",
@@ -3874,6 +3881,7 @@ var rules = [
             "qvodzy.org",
             "qx.net",
             "qxbbs.org",
+            "qz.com",
             "r18.com",
             "ra.gg",
             "radicalparty.org",
@@ -5153,6 +5161,7 @@ var rules = [
             "warehouse333.com",
             "waselpro.com",
             "washeng.net",
+            "washingtonpost.com",
             "watch8x.com",
             "watchinese.com",
             "watchmygf.net",
@@ -5591,6 +5600,7 @@ function testHost(host, index) {
     lastRule = '';
 }
 
+// REF: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith
 if (!String.prototype.endsWith) {
     String.prototype.endsWith = function(searchString, position) {
         var subjectString = this.toString();
