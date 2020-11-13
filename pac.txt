@@ -1,6 +1,6 @@
 /*
  * ProxyAutoConfig JavaScript
- * GFWList Last-Modified: 2020-04-12 21:15:29
+ * GFWList Last-Modified: 2020-10-21 00:11:38
  * Update URL: https://raw.githubusercontent.com/raixen/997/master/pac.txt
  */
 
