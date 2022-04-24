@@ -1,70 +1,67 @@
 <!doctype html>
-<html><head><meta charset="gb2312"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>收款码</title><script>var setting = {aliUrl: "https://qr.alipay.com/tsx07294fntun7833pzkv0d",}</script>
-<style>
-* {
-margin: 0; padding: 0;
-font-family: Microsoft yahei;
--moz-user-select: none;
--o-user-select:none;
--khtml-user-select:none;
--webkit-user-select:none;
--ms-user-select:none;
-user-select:none;
-}
-body {
-background-color: #eee;
-}
-.code-item {
-width: 100%;
-max-width: 400px;
-margin: 0 auto;
-display: none;
-background-color: #5c92ef;
-}
-.code-title {
-height: 100px;
-background-color: #f2f2f2;
-background-position: center;
-background-repeat: no-repeat;
-background-size: 50%;
-}
-.code-area {
-text-align: center;
-}
-.code-area>img {
-margin: 80px 0;
-width: 60%;
-min-width: 100px;
-}
-.code-footer {
-height: 80px;
-text-align: center;
-background-color: #fff;
-color: #666;
-line-height: 80px;
-font-size: 20px;
-}
-.wechat a {
-text-decoration:none;
-color:#54bc6e;
-font-size:12px;
-}
+<html><head><meta charset="gb2312"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"><title>收款码</title><script>var setting = {aliUrl: "https://qr.alipay.com/tsx07294fntun7833pzkv0d",}</script>
+    <style>
+    * {
+        margin: 0; padding: 0;
+        font-family: Microsoft yahei;
+		-moz-user-select: none;
+        -o-user-select:none;
+        -khtml-user-select:none;
+        -webkit-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+    }
+    body {
+        background-color: #eee;
+    }
+    .code-item {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        display: none;
+        background-color: #5c92ef;
+    }
+    .code-title {
+        height: 100px;
+        background-color: #f2f2f2;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 50%;
+    }
+    .code-area {
+        text-align: center;
+    }
+    .code-area>img {
+        margin: 80px 0;
+        width: 60%;
+        min-width: 100px;
+    }
+    .code-footer {
+        height: 80px;
+        text-align: center;
+        background-color: #fff;
+        color: #666;
+        line-height: 80px;
+        font-size: 20px;
+    }
+    .wechat a { text-decoration:none;color:#54bc6e;font-size:14px;}
 
-#code-all>.code-title {
-background-image: url("a");
-}
+     #code-all>.code-title {
+        background-image: url("a");
+    }
 
-#code-qq {
-background-color: #54b4ef;
-}
-#code-qq>.code-title {
-background-image: url("q");
-}
+     #code-qq {
+        background-color: #54b4ef;
+    }
+    #code-qq>.code-title {
+        background-image: url("q");
+    }
 
-#code-wechat {
-background-color: #54bc6e;
-}
-#code-wechat>.code-title {
-background-image: url("w");
-}
-</style></head><body><div class="code-item" id="code-all"><div class="code-title"></div><div class="code-area"><img id="page-url" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="></div><div class="code-footer">扫描二维码向我付款</div></div><div class="code-item" id="code-qq"><div class="code-title"></div><div class="code-area"><img id="qq-url" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="></div><div class="code-footer">长按二维码-扫描 向我付款</div></div><div class="code-item" id="code-wechat"><div class="code-title"></div><div class="code-area"><img id="wechat-url" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="></div><div class="code-footer">长按二维码-识别 向我付款<br><div class="wechat"><a href="https://rngrng.com/go/?link=3cae" target="_blank">加微信</a></div></div></div><script>if(navigator.userAgent.match(/Alipay/i)) {window.location.href = setting.aliUrl;} else if(navigator.userAgent.match(/MicroMessenger\//i)) {document.getElementById("wechat-url").src = "data:image/png;base64,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";document.getElementById("code-wechat").style.display = "block";} else if(navigator.userAgent.match(/QQ\//i)) {document.getElementById("qq-url").src = "qc";document.getElementById("code-qq").style.display = "block";} else {document.getElementById("page-url").src = "pc";document.getElementById("code-all").style.display = "block";}function urlEncode(String) {return encodeURIComponent(String).replace(/'/g,"%27").replace(/"/g,"%22");}</script></body></html>
+     #code-wechat {
+        background-color: #54bc6e;
+    }
+    #code-wechat>.code-title {
+        background-image: url("w");
+
+     }
+    </style></head><body><div class="code-item" id="code-all"><div class="code-title"></div><div class="code-area"><img id="page-url" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="></div><div class="code-footer">扫描二维码向我付款</div></div><div class="code-item" id="code-qq"><div class="code-title"></div><div class="code-area"><img id="qq-url" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="></div><div class="code-footer">长按二维码-扫描 向我付款</div></div><div class="code-item" id="code-wechat"><div class="code-title"></div><div class="code-area"><img id="wechat-url" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="></div><div class="code-footer">长按二维码-识别 向我付款<br><div class="wechat"><a href="/go/?link=3cae" target="_blank">加微信</a></div></div></div></div><script>if(navigator.userAgent.match(/Alipay/i)) {window.location.href = setting.aliUrl;} else if(navigator.userAgent.match(/MicroMessenger\//i)) {document.getElementById("wechat-url").src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeAAAAHgAQMAAABHGizWAAAABlBMVEX///8AAABVwtN+AAAC8UlEQVR42u3cPW7zMAwGYAUeMuYIPkqOZh/NR8kRMnowwvLPJA107CCl7wsjwFf6yfSppWRZDUGQP89EkZf8mzjvthCtWtyaZOYffvizPSiyAgP3jq3ebvS6MSOSW9Y7SQ6rR7jSLHdg4AHwpKOCsRTNr2f9eQ6Z+WOYL6kDAw+H+Uf2S5/2thztyZcU9RZg4H+Kmw+slqOK6zqqgIHHw6UbIjK87Ir5a4/s9Gs3BAw8AI5op8+X4cV+6es1f/Sqs1hg4N5xzS0rd7ks25Sdfg0w8AjYmNQvs1geNTowLDNFt7PswMBfjSdnuXyjt9Qi45s1+36LjrcVGLhv7M2+1TnR6kg3RFzRbkhbJcu7+TcDA3ePuZ6tjk9kY/XR5gD25VL0KSxfwMB9Yx0VvnieX2G30BGrj5p4JAUMPABmeSSo22AEa50i7ndt1oGBvxpb5rPVseTSZazZR701YOABsD5O3eJZqi/CeMMjxeyGzngRGLhvbP7yOJWzel0HxqQ4t8nYwGnAwL1jrj9t9VGwD4yysu65XRoaYOARMNUtXiYdN4+vPtZRAQz85bjm4QNnvestMqr08xOTgXzkBAw8AJa/GGV/GAm+JmYCOWSAgfvGk1S2VrohvqS4qIniTNcVGmDg3rF0+jGFtYrg+n+f62UW6wEG7h1L0StNvG9PLPu/tim2gMX8lnZg4C/HW05kpfioe2jUa6VEuyFg4CGwJ6QXfX/Y0eZo9mPpEhi4d1zfLv1I5e3d0G/JR07AwCPgXF3MFZpWXjDNfb25j6ABA/eO410j/eTUgwGkHis0EV9ZBwb+YlwTpwqolFtyN3y+hAcMPAa+nJgRDc9C/jh10+vlY+MyEwAG7h1fjyXl6MAQnHXHOTB2YOABsC8w+sCwxGkwftKReoqsXAcGHgfHoRcqz5enN4HmY81dAgz8bzAnsESLRx1S558TYOABcNPUPetxdKPXr0c3AgMPgiPlXIzIdnlf47L6CAzcN0YQpKP8APsUEh9U6kRHAAAAAElFTkSuQmCC";document.getElementById("code-wechat").style.display = "block";} else if(navigator.userAgent.match(/QQ\//i)) {document.getElementById("qq-url").src = "qc";document.getElementById("code-qq").style.display = "block";} else {document.getElementById("page-url").src = "pc";document.getElementById("code-all").style.display = "block";}function urlEncode(String) {return encodeURIComponent(String).replace(/'/g,"%27").replace(/"/g,"%22");}</script></body></html>
