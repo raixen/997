@@ -1,6 +1,6 @@
 /*
  * ProxyAutoConfig JavaScript
- * GFWList Last-Modified: 2020-10-21 00:11:38
+ * GFWList Last-Modified: 2023-09-17 12:30:21
  * Update URL: https://raw.githubusercontent.com/raixen/997/master/pac.txt
  */
 
@@ -889,6 +889,8 @@ var domains = [
     "clinica-tibet.ru",
     "clipfish.de",
     "cloakpoint.com",
+    "cloudcone.com",
+    "cloudflare.com",
     "cloudfront.net",
     "club1069.com",
     "clyp.it",
@@ -1072,6 +1074,7 @@ var domains = [
     "dcard.tw",
     "dcmilitary.com",
     "ddc.com.tw",
+    "dddd.cool",
     "ddhw.info",
     "ddns.info",
     "ddns.me.uk",
@@ -1443,6 +1446,7 @@ var domains = [
     "favstar.fm",
     "fawanghuihui.org",
     "faydao.com",
+    "fast.com",
     "fb.com",
     "fb.me",
     "fbaddins.com",
@@ -1751,7 +1755,9 @@ var domains = [
     "gitbooks.io",
     "github.com",
     "github.io",
+    "githubs.cn",
     "githubassets.com",
+    "githubapp.com",
     "githubusercontent.com",
     "gizlen.net",
     "gjczz.com",
@@ -2016,7 +2022,6 @@ var domains = [
     "google.vn",
     "google.vu",
     "google.ws",
-    "googleapis.cn",
     "googleapis.com",
     "googleapps.com",
     "googlearth.com",
@@ -2135,7 +2140,6 @@ var domains = [
     "hanminzu.org",
     "hanunyi.com",
     "hao.news",
-    "hao123.com",
     "hao123img.com",
     "happy-vpn.com",
     "haproxy.org",
@@ -2371,6 +2375,7 @@ var domains = [
     "i1.hk",
     "i2p2.de",
     "i2runner.com",
+    "i3zh.com",
     "i818hk.com",
     "iam.soy",
     "iamtopone.com",
@@ -2493,7 +2498,6 @@ var domains = [
     "iptv.com.tw",
     "iptvbin.com",
     "ipvanish.com",
-    "iqiyi.com",
     "iredmail.org",
     "irib.ir",
     "ironpython.net",
@@ -2850,6 +2854,7 @@ var domains = [
     "logbot.net",
     "logiqx.com",
     "logmein.com",
+    "loli.net",
     "londonchinese.ca",
     "longhair.hk",
     "longmusic.com",
@@ -2961,6 +2966,7 @@ var domains = [
     "meforum.org",
     "mefound.com",
     "mega.nz",
+    "mega.co.nz",
     "megaproxy.com",
     "megarotic.com",
     "megavideo.com",
@@ -3063,6 +3069,7 @@ var domains = [
     "mog.com",
     "mohu.club",
     "mohu.ml",
+    "mojie.pw",
     "mojim.com",
     "mol.gov.tw",
     "molihua.org",
@@ -3229,6 +3236,7 @@ var domains = [
     "netcolony.com",
     "netfirms.com",
     "netflix.com",
+    "nflxvideo.net",
     "netme.cc",
     "netsneak.com",
     "network54.com",
@@ -3425,6 +3433,7 @@ var domains = [
     "ontrac.com",
     "oopsforum.com",
     "open.com.hk",
+    "openai.com",
     "openallweb.com",
     "opendemocracy.net",
     "opendn.xyz",
@@ -3435,6 +3444,7 @@ var domains = [
     "openvpn.net",
     "openvpn.org",
     "openwebster.com",
+    "openwrt.org",
     "openwrt.org.cn",
     "opera-mini.net",
     "opera.com",
@@ -3950,6 +3960,7 @@ var domains = [
     "seapuff.com",
     "search.com",
     "search.xxx",
+    "search.brave.com",
     "searchtruth.com",
     "seatguru.com",
     "secretchina.com",
@@ -4118,6 +4129,7 @@ var domains = [
     "smyxy.org",
     "snapchat.com",
     "snaptu.com",
+    "snapsave.io",
     "sndcdn.com",
     "sneakme.net",
     "snowlionpub.com",
@@ -4549,6 +4561,7 @@ var domains = [
     "tibetwrites.org",
     "ticket.com.tw",
     "tigervpn.com",
+    "tiktok.com",
     "tiltbrush.com",
     "timdir.com",
     "time.com",
@@ -4893,6 +4906,7 @@ var domains = [
     "uygur.org",
     "uymaarip.com",
     "v2ex.com",
+    "v2fly.org",
     "v2ray.com",
     "van001.com",
     "van698.com",
@@ -5131,6 +5145,7 @@ var domains = [
     "wikileaks.pl",
     "wikilivres.info",
     "wikimapia.org",
+    "wikimedia.org",
     "wikinews.org",
     "wikipedia.org",
     "wikisource.org",
@@ -5457,7 +5472,7 @@ var domains = [
     ];
 
 function FindProxyForURL(url, host) {
-    for (var i = 0; i < domains.length; i++) {
+    for (var i=0; i<domains.length; i++) {
     	if (host == domains[i] || dnsDomainIs(host, '.' + domains[i])) {
             return proxy;
     	}
