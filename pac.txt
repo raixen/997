@@ -1,6 +1,6 @@
 /*
  * ProxyAutoConfig JavaScript
- * GFWList Last-Modified: 2023-09-17 12:30:21
+ * GFWList Last-Modified: 2024-06-12 22:01:33
  * Update URL: https://raw.githubusercontent.com/raixen/997/master/pac.txt
  */
 
@@ -758,6 +758,7 @@ var domains = [
     "channel8news.sg",
     "chaoex.com",
     "chapm25.com",
+    "chatgpt.com",
     "chatnook.com",
     "chaturbate.com",
     "chengmingmag.com",
@@ -2777,6 +2778,7 @@ var domains = [
     "leisurepro.com",
     "lematin.ch",
     "lemonde.fr",
+    "lencr.org",
     "lenwhite.com",
     "lerosua.org",
     "lers.google",
@@ -3380,6 +3382,7 @@ var domains = [
     "nzchinese.com",
     "nzchinese.net.nz",
     "oauth.net",
+    "oaistatic.com",
     "observechina.net",
     "obutu.com",
     "ocaspro.com",
@@ -3435,6 +3438,7 @@ var domains = [
     "open.com.hk",
     "openai.com",
     "openallweb.com",
+    "openai.com",
     "opendemocracy.net",
     "opendn.xyz",
     "openervpn.in",
